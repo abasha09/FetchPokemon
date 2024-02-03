@@ -4,9 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Find Pokemon</title>
   </head>
   <body>
+    <div>
+      <section>
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon name" />
+        <button onclick="fetchData()">Fetch Pokemon</button><br />
+      </section>
+
+      <img
+        width="120px"
+        height="120px"
+        src=""
+        alt="Pokemon Sprite"
+        id="pokemonSprite"
+        style="display: none"
+      />
+      <error id="error" style="color: red; display: none"></error>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
